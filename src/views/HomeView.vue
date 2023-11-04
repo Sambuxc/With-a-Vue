@@ -1,10 +1,10 @@
 <script>
-import PageHome from '@/components/PageHome.vue'
+import PageJsonData from '@/components/PageJsonData.vue'
 
 export default {
   name: 'HomeView',
   components: {
-    PageHome
+    PageJsonData
   }
 }
 </script>
