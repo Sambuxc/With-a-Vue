@@ -20,6 +20,7 @@ export default {
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
+        <RouterLink to="/funwith">Fun With</RouterLink>
       </nav>
     </div>
   </header>
