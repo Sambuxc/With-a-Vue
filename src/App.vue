@@ -1,11 +1,11 @@
 <script>
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from '@/components/HelloWorld.vue'
+import HeaderArea from '@/components/Header.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HeaderArea
   }
 }
 </script>
@@ -15,7 +15,7 @@ export default {
     <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
 
     <div class="wrapper">
-      <hello-world msg="You did it!" />
+      <header-area title="Good Vue Hunting" />
 
       <nav>
         <RouterLink to="/">Home</RouterLink>
