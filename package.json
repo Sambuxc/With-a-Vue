@@ -1,6 +1,6 @@
 {
-  "name": "good-vue",
-  "description": "A personal vue app that has some cool features",
+  "name": "good-vue-huniting",
+  "description": "A personal app project that has some cool features with the help of external APIs",
   "private": true,
   "version": "0.0.0",
   "scripts": {
