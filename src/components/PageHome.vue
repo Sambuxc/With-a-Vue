@@ -9,26 +9,19 @@
   </div>
 </template>
 
-<script>
-import sourceData from '../data.json'
+<script setup>
+import sourceData from '@/data.json'
+import { reactive, ref } from 'vue'
 
-export default {
-  name: 'PageHome',
-  data () {
-    return {
-      users: sourceData.users,
-      threads: sourceData.threads,
-      posts: sourceData.posts
-    }
-  },
-  methods: {
-    postById (postId) {
-      return this.posts.find(p => p.id === postId)
-    },
-    userById (userId) {
-      return this.users.find(u => u.id === userId)
-    }
-  }
+const users = ref(sourceData.users)
+const threads = reactive(sourceData.threads)
+const posts = reactive(sourceData.posts)
+
+function postById (postId) {
+  return posts.find(p => p.id === postId)
+}
+function userById (userId) {
+  return users.value.find(u => u.id === userId)
 }
 </script>
 
