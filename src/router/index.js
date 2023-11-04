@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '@/views/HomeView.vue'
-import FunWith from '@/views/FunWithView.vue'
+import ForumView from '@/views/ForumView.vue'
 
 const routes = [
   {
@@ -17,9 +17,9 @@ const routes = [
     component: () => import('@/views/AboutView.vue')
   },
   {
-    path: '/funwith',
-    name: 'Fun with',
-    component: FunWith
+    path: '/forum',
+    name: 'Forum',
+    component: ForumView
   }
 ]
 
